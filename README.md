@@ -139,6 +139,17 @@ Dropout-26 [-1, 16, 6, 6] 0
 AvgPool2d-27 [-1, 16, 1, 1] 0
 Conv2d-28 [-1, 10, 1, 1] 160
 ================================================================
+Total params: 7,544
+Trainable params: 7,544
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.65
+Params size (MB): 0.03
+Estimated Total Size (MB): 0.68
+----------------------------------------------------------------
+
+
 ```
 
 ## Key Features
