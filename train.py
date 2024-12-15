@@ -4,6 +4,7 @@ from torch.optim import SGD
 from torch.optim.lr_scheduler import OneCycleLR
 from model import Net
 from utils import get_transforms, train, test
+from torchsummary import summary
 import matplotlib.pyplot as plt
 
 def main():
