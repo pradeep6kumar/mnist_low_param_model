@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-import torch.nn.functional as F
 dropout_value = 0.1
+
+
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
