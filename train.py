@@ -27,6 +27,8 @@ def main():
     
     # Model
     model = Net().to(device)
+
+    print(summary(model, input_size=(1, 28, 28)))
     
     # Training setup
     optimizer = SGD(model.parameters(), lr=0.01, momentum=0.9, weight_decay=0.0001, nesterov=True)
