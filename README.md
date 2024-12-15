@@ -153,3 +153,20 @@ Conv2d-28 [-1, 10, 1, 1] 160
 - Learning Rate: OneCycleLR scheduler
 - Batch Size: 128 (CUDA) / 64 (CPU)
 - Data Augmentation: Yes (via transforms)
+
+### Areas for Improvement
+- The model shows signs of underfitting, as training accuracy consistently remains lower than test accuracy across all epochs
+- Training accuracy (98.83%) < Test accuracy (99.31%) in final epoch
+- This unusual pattern suggests:
+  1. The model has potential for better performance
+  2. Training data might be more challenging than test data
+  3. Regularization (Dropout, BatchNorm) might be too aggressive
+  4. Learning rate or optimizer settings could be further optimized
+
+### Potential Solutions
+- Increase model capacity selectively
+- Adjust dropout rates
+- Fine-tune learning rate schedule
+- Review data augmentation strategy
+- Consider extending training duration
+
