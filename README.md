@@ -30,9 +30,7 @@
 
 ### Layer Structure
 
-
-Ctrl+K to generate a command
-create a readme file, this is the summary of model: EPOCH: 0
+summary of model: EPOCH: 0
 Loss=0.029920436441898346 Batch_id=937 Accuracy=89.77: 100%|██████████| 938/938 [00:20<00:00, 44.78it/s]
 
 Test set: Average loss: 0.0598, Accuracy: 9834/10000 (98.34%)
@@ -104,52 +102,7 @@ Test set: Average loss: 0.0247, Accuracy: 9933/10000 (99.33%)
 
 EPOCH: 14
 Loss=0.022044120356440544 Batch_id=937 Accuracy=98.83: 100%|██████████| 938/938 [00:19<00:00, 48.38it/s] 
-
-Test set: Average loss: 0.0240, Accuracy: 9931/10000 (99.31%) and total number of parameters are these: cuda
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Conv2d-1           [-1, 16, 26, 26]             144
-              ReLU-2           [-1, 16, 26, 26]               0
-       BatchNorm2d-3           [-1, 16, 26, 26]              32
-           Dropout-4           [-1, 16, 26, 26]               0
-            Conv2d-5           [-1, 10, 24, 24]           1,440
-              ReLU-6           [-1, 10, 24, 24]               0
-       BatchNorm2d-7           [-1, 10, 24, 24]              20
-           Dropout-8           [-1, 10, 24, 24]               0
-            Conv2d-9           [-1, 10, 24, 24]             100
-        MaxPool2d-10           [-1, 10, 12, 12]               0
-           Conv2d-11           [-1, 10, 10, 10]             900
-             ReLU-12           [-1, 10, 10, 10]               0
-      BatchNorm2d-13           [-1, 10, 10, 10]              20
-          Dropout-14           [-1, 10, 10, 10]               0
-           Conv2d-15             [-1, 10, 8, 8]             900
-             ReLU-16             [-1, 10, 8, 8]               0
-      BatchNorm2d-17             [-1, 10, 8, 8]              20
-          Dropout-18             [-1, 10, 8, 8]               0
-           Conv2d-19             [-1, 16, 6, 6]           1,440
-             ReLU-20             [-1, 16, 6, 6]               0
-      BatchNorm2d-21             [-1, 16, 6, 6]              32
-          Dropout-22             [-1, 16, 6, 6]               0
-           Conv2d-23             [-1, 16, 6, 6]           2,304
-             ReLU-24             [-1, 16, 6, 6]               0
-      BatchNorm2d-25             [-1, 16, 6, 6]              32
-          Dropout-26             [-1, 16, 6, 6]               0
-        AvgPool2d-27             [-1, 16, 1, 1]               0
-           Conv2d-28             [-1, 10, 1, 1]             160
-================================================================
-Total params: 7,544
-Trainable params: 7,544
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 0.65
-Params size (MB): 0.03
-Estimated Total Size (MB): 0.68
---------------------------------------------------------------- , create the readme in such a way that it incorporates summary and number of parameters, highest accuracy and consistency of accuracies as well
-
-
-I'll create a README.md file that summarizes the model's performance and architecture.
+```
 ----------------------------------------------------------------
 Layer (type) Output Shape Param #
 ================================================================
@@ -182,7 +135,7 @@ Dropout-26 [-1, 16, 6, 6] 0
 AvgPool2d-27 [-1, 16, 1, 1] 0
 Conv2d-28 [-1, 10, 1, 1] 160
 ================================================================
-
+```
 
 ## Key Features
 - Lightweight architecture with only 7.5K parameters
